@@ -1,0 +1,248 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificate of Completion - Computer Fundamentals Course</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f0f2f5;
+    color: #222;
+}
+
+.certificate {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    background: #fffdf7;
+    border: 10px double #2b3a67;
+    outline: 2px solid #c5a44d;
+    outline-offset: -18px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #2b3a67;
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    color: #9a792b;
+    font-size: 23px;
+    margin-top: 8px;
+}
+
+.intro {
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.name-line {
+    width: 80%;
+    max-width: 520px;
+    padding: 10px;
+    margin: 12px auto 0;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #2b3a67;
+    background: transparent;
+}
+
+.student-label {
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.topics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px 20px;
+    max-width: 550px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.topic {
+    padding: 5px 10px;
+    border-bottom: 1px solid #e0d7bd;
+}
+
+.completion-text {
+    line-height: 1.7;
+    margin: 20px auto;
+    max-width: 680px;
+}
+
+.details {
+    margin: 25px auto;
+    max-width: 650px;
+    text-align: left;
+    line-height: 2.5;
+}
+
+.details input {
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.instructor {
+    width: 60%;
+}
+
+.date {
+    width: 55%;
+}
+
+.signature {
+    width: 58%;
+}
+
+.seal {
+    width: 90%;
+    max-width: 460px;
+    margin: 25px auto 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 4px double #c5a44d;
+    background: #2b3a67;
+    color: white;
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.seal strong {
+    display: block;
+    font-size: 17px;
+    margin: 8px 0;
+}
+
+.seal span {
+    display: block;
+    font-size: 13px;
+}
+
+.buttons {
+    text-align: center;
+    margin: 25px auto;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 5px;
+    background: #2b3a67;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    .certificate { padding: 25px 15px; }
+    h1 { font-size: 27px; }
+    .topics { grid-template-columns: 1fr; }
+}
+
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 10mm;
+    }
+
+    body {
+        padding: 0;
+        background: white;
+    }
+
+    .certificate {
+        max-width: none;
+        width: 100%;
+        padding: 25px;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .buttons {
+        display: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="certificate">
+
+<h1>Certificate of Completion</h1>
+<h2>Computer Fundamentals Course</h2>
+
+<p class="intro">This certifies that:</p>
+
+<input class="name-line" id="studentName"
+type="text" aria-label="Student name"
+placeholder="Enter student's full name">
+
+<p class="student-label">Student Name</p>
+
+<p>has successfully completed the Computer Fundamentals Course, covering:</p>
+
+<div class="topics">
+    <div class="topic">Computer Basics</div>
+    <div class="topic">Operating Systems</div>
+    <div class="topic">Hardware</div>
+    <div class="topic">Software</div>
+    <div class="topic">Networks</div>
+    <div class="topic">Internet</div>
+    <div class="topic">Security</div>
+    <div class="topic">Maintenance</div>
+    <div class="topic">Troubleshooting</div>
+    <div class="topic">Digital Citizenship</div>
+</div>
+
+<p class="completion-text">
+and has demonstrated competency through the Final Exam and course assessments.
+</p>
+
+<div class="details">
+    <div>Instructor:
+        <input class="instructor" type="text" aria-label="Instructor name">
+    </div>
+
+    <div>Date of Completion:
+        <input class="date" type="text" aria-label="Date of completion">
+    </div>
+
+    <div>Signature:
+        <input class="signature" type="text" aria-label="Signature">
+    </div>
+</div>
+
+<div class="seal">
+    <span>OFFICIAL SEAL OF ACHIEVEMENT</span>
+    <strong>COMPUTER FUNDAMENTALS COURSE</strong>
+    <span>COMPLETION SEAL</span>
+</div>
+
+</div>
+
+<div class="buttons">
+    <button type="button" onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+</body>
+</html>
+```
